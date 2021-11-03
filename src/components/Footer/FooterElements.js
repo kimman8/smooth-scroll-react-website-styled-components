@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
@@ -65,7 +65,10 @@ export const FooterLink = styled(Link)`
 `;
 
 export const SocialMedia = styled.section`
-  max-width: 1000px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 export const SocialMediaWrap = styled.div`
   display: flex;

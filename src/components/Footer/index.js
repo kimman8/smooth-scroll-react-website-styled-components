@@ -1,12 +1,12 @@
-import React from "react";
-import { animateScroll as scroll } from "react-scroll";
+import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   FaFacebook,
   FaTwitter,
   FaYoutube,
   FaLinkedin,
   FaInstagram,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 import {
   FooterContainer,
   FooterLink,
@@ -21,7 +21,7 @@ import {
   SocialMedia,
   SocialMediaWrap,
   WebsiteRights,
-} from "./FooterElements";
+} from './FooterElements';
 
 const Footer = () => {
   const toggleHome = () => {
@@ -33,67 +33,61 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us1</FooterLinkTitle>
-              <FooterLink to="/signin">How it works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
+              <FooterLinkTitle>About Us</FooterLinkTitle>
+              <FooterLink to='/signin'>How it works</FooterLink>
+              <FooterLink to='/signin'>Testimonials</FooterLink>
+              <FooterLink to='/signin'>Careers</FooterLink>
+              <FooterLink to='/signin'>Investors</FooterLink>
+              <FooterLink to='/signin'>Terms of Service</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us2</FooterLinkTitle>
-              <FooterLink to="/signin">How it works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
+              <FooterLinkTitle>About Us</FooterLinkTitle>
+              <FooterLink to='/signin'>How it works</FooterLink>
+              <FooterLink to='/signin'>Testimonials</FooterLink>
+              <FooterLink to='/signin'>Careers</FooterLink>
+              <FooterLink to='/signin'>Investors</FooterLink>
+              <FooterLink to='/signin'>Terms of Service</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us3</FooterLinkTitle>
-              <FooterLink to="/signin">How it works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
+              <FooterLinkTitle>About Us</FooterLinkTitle>
+              <FooterLink to='/signin'>How it works</FooterLink>
+              <FooterLink to='/signin'>Testimonials</FooterLink>
+              <FooterLink to='/signin'>Careers</FooterLink>
+              <FooterLink to='/signin'>Investors</FooterLink>
+              <FooterLink to='/signin'>Terms of Service</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us4</FooterLinkTitle>
-              <FooterLink to="/signin">How it works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
+              <FooterLinkTitle>About Us</FooterLinkTitle>
+              <FooterLink to='/signin'>How it works</FooterLink>
+              <FooterLink to='/signin'>Testimonials</FooterLink>
+              <FooterLink to='/signin'>Careers</FooterLink>
+              <FooterLink to='/signin'>Investors</FooterLink>
+              <FooterLink to='/signin'>Terms of Service</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>
+            <SocialLogo to='/' onClick={toggleHome}>
               dolla
             </SocialLogo>
-            <WebsiteRights>
-              Dolla © {new Date().getFullYear()} All rights reserved
-            </WebsiteRights>
+            <WebsiteRights>Kim Yuen © {new Date().getFullYear()}</WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink
-                href="//www.instagram.com/kimzzles"
-                target="_blank"
-                aria-label="Instagram"
-              >
+              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+              <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
                 <FaYoutube />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+              <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
                 <FaTwitter />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Linkedi n">
+              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>

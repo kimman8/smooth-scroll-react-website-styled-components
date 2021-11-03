@@ -1,5 +1,3 @@
-import img4 from '../../components/images/svg-4.svg';
-
 export const homeObjOne = {
   id: 'about',
   lightBg: true,

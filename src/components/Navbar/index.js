@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { animateScroll as scroll } from "react-scroll";
-import { IconContext } from "react-icons/lib";
-import { FaBars } from "react-icons/fa";
+import React, { useState, useEffect } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+import { IconContext } from 'react-icons/lib';
+import { FaBars } from 'react-icons/fa';
 import {
   MobileIcon,
   Nav,
@@ -12,7 +12,7 @@ import {
   NavLinks,
   NavLogo,
   NavMenu,
-} from "./NavbarElements";
+} from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(true);
@@ -25,18 +25,18 @@ const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    window.addEventListener('scroll', changeNav);
   }, []);
   const toggleHome = () => {
     scroll.scrollToTop();
   };
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
-              dolla
+            <NavLogo to='/' onClick={toggleHome}>
+              KA CHING
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -44,11 +44,11 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to="about"
+                  to='about'
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
+                  exact='true'
                   offset={-80}
                 >
                   About
@@ -56,11 +56,11 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="discover"
+                  to='discover'
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
+                  exact='true'
                   offset={-80}
                 >
                   Discover
@@ -68,11 +68,11 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="services"
+                  to='services'
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
+                  exact='true'
                   offset={-80}
                 >
                   Services
@@ -80,19 +80,19 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="signup"
+                  to='signup'
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
+                  exact='true'
                   offset={-80}
                 >
-                  Sign Up{" "}
+                  Sign Up{' '}
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to='/signin'>Sign In</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

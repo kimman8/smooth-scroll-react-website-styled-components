@@ -71,7 +71,7 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
-              dolla
+              KA CHING
             </SocialLogo>
             <WebsiteRights>Kim Yuen © {new Date().getFullYear()}</WebsiteRights>
             <SocialIcons>
